@@ -15,9 +15,16 @@ public class Main {
     public static void main(String[] args) {
 
         String url = "https://www.nba.com/search";
-        Scanner s = new Scanner(System.in);
+        /*Scanner s = new Scanner(System.in);
 
-        String input = s.nextLine();
+        String input = s.nextLine();*/
+
+        String input = args[0];
+
+        if (input == null || input.equals("")) {
+            System.out.println("Error Occurred");
+            return;
+        }
 
         Document doc = searchNBAPlayer3PA(url, "input#search-text-input", "button.Button_button__L2wUb.SearchBar_sbButton__eyDP6", input);
 
