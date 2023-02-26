@@ -23,5 +23,3 @@ For changing the argument go to the pom.xml file under build.plugins.plugin.conf
 ### For running the tests execute
 
 `mvn test`
-
-`java -jar target/mvn-example-1.0-SNAPSHOT.jar`
